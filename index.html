@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyThreads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo_name.png" alt="TrendyThreads" id="logo_TrendyThreads" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link menuitems" href="#"><i class="fa fa-bomb"></i> New
+                        Arrivals</a>
+                </li>
+                <li class="nav-item menuitems">
+                    <a class="nav-link" href="#"><i class="fa fa-line-chart"></i> Trending</a>
+                </li>
+                <li class="nav-item menuitems">
+                    <a class="nav-link" href="#"><i class="fa fa-heart-o"></i>
+                        Whishlist</a>
+                </li>
+                <li class="nav-item menuitems">
+                    <a class="nav-link" href="#"><i class="fa fa-opencart"></i> View Cart</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero" class="text-center d-flex justify-content-center align-items-center">
+        <div>
+            <h1>Discover the Latest Trends in Fashion</h1>
+            <p>Join our newsletter to stay up-to-date!</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+                Join Us Now
+            </button>
+
+            <div class="modal fade signup_popup" id="signupModal" tabindex="-1" role="dialog"
+                aria-labelledby="signupModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="signupForm">
+                                <div class="form-group">
+                                    <label for="signupEmail">Email
+                                        address</label>
+                                    <input type="email" class="form-control" id="signupEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signupPassword">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signupPasswordConfirm">Confirm
+                                        Password</label>
+                                    <input type="password" class="form-control" id="signupPasswordConfirm" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Already a member? <a href="#" data-toggle="modal" data-target="#loginModal"
+                                    data-dismiss="modal">Click to Log
+                                    In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade signup_popup" id="loginModal" tabindex="-1" role="dialog"
+                aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Log
+                                In</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="loginEmail">Email
+                                        address</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Log In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="new-arrivals" class="container mt-5">
+        <h2 class="text-center mb-4">New Arrivals</h2>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Spider-Man Printed
+                                Sweatshirt</h5>
+                            <p class="card-text">₹1299 <del>₹1999</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_2.jpeg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lightweight Cotton
+                                Sweatshirt</h5>
+                            <p class="card-text">₹2159
+                                <del>₹2699</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Men Loose Fit
+                                Sweatshirt</h5>
+                            <p class="card-text">₹1059
+                                <del>₹1999</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_4.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Terry Pure Cotton
+                                Pullover</h5>
+                            <p class="card-text">₹2079 <del>₹2599</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_5.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Abstract Printed
+                                Sweatshirt</h5>
+                            <p class="card-text">₹2399
+                                <del>₹2999</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/product_6.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Hooded Cotton
+                                Sweatshirt</h5>
+                            <p class="card-text">₹1799
+                                <del>₹1999</del>
+                            </p>
+                            <a href="#" class="btn btn-primary add_btn"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="video-background-section" class="container-fluid">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="assets/cover-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="signup" class="container mt-5">
+        <h2>Join Our Newsletter</h2>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="text-center mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="social_area">
+                        <h3>Follow us on</h3>
+                        <a class="social_links" href="#social_area"><i class="fa fa-linkedin"></i></a>
+                        <a class="social_links" href="#social_area"><i class="fa fa-instagram"></i></a>
+                        <a class="social_links" href="#social_area"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <p>&copy; 2024 TrendyThreads. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
